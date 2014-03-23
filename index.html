@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>EEIC五月祭「近未来体験2014」</title>
+    <meta name="keyword" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/JavaScript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/JavaScript" src="js/header.js"></script>
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+    <![endif]-->
+      <script>
+        $(function(){
+          $("nav a").hover(function(){
+            $("img",this).hide();
+          },function(){
+            if(!$("img",this).hasClass("clicked")){
+              $("img",this).show();
+            }
+          });
+          $("nav a").click(function(){
+            $("nav a img").show();
+            $("img",this).hide();
+            $("nav a img").removeClass("clicked");
+            $("img",this).addClass("clicked");
+          });
+        })
+
+        $(function(){
+          $(".menuon:gt(0)").add($(".menuoff:first")).add($(".imagearea img:gt(0)")).hide();
+          var first=-1;
+          var second=0;
+            setInterval(function(){
+              if(++first> 2){first=0;} 
+              if(++second > 2){second=0;}
+              $("div.menuon").eq(first).add($("div.menuoff").eq(second)).add($(".imagearea img").eq(first)).fadeOut(400,function(){
+              $("div.menuoff").eq(first).add($("div.menuon").eq(second)).add($(".imagearea img").eq(second)).fadeIn(400)
+            });
+          },3000);
+        });
+
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="contents">
+        <header>
+        <div class="logo_area">
+          <div class="logo_eeic"><img src="img/header_eeic.png" alt="東京大学工学部電子情報・電気電子工学科五月祭特別ページ"></div>
+          <div class="logo_title"><img src="img/header_title.png" alt="近未来体験2014"></div>
+        </div>
+        <nav>
+        <ul class="clearfix">
+          <li class="home"><a href="#"><img src="img/ample.png" alt="home"></a></li>
+          <li class="exhi"><a href="#"><img src="img/exhi.png" alt="展示"></a></li>
+          <li class="ws"><a href="#"><img src="img/ws.png" alt="ワークショップ"></a></li>
+          <li class="lec"><a href="#"><img src="img/lec.png" alt="講演会"></a></li>
+          <li class="shingaku"><a href="#"><img src="img/shingaku.png" alt="進学相談室"></a></li>
+          <li class="access"><a href="#"><img src="img/access.png" alt="アクセス"></a></li>
+          <li class="access"><a href="#"><img src="img/access.png" alt="アクセス"></a></li>
+        </ul>
+        </nav>
+        </header>
+        <div id="main">
+          <div id="top">
+            <div class="topimage">
+              <div class="topmenuarea">
+                <div class="mayfes">
+                  <p class="date">5/17（土）<br>5/18（日）</p>
+                  <p>東京大学 五月祭</p>
+                  <p class="small">東京大学本郷キャンパスにて開催</p>
+                  <p class="small">五月祭公式サイトは<a href="http://a103.net/may" target="blank">こちら</a></p>
+                </div>
+                <div class="menuon"> 
+                  <img src="img/top_exhi.png" alt="展示">
+                </div>
+                <div class="menuoff">
+                  <img src="img/top_exhi.png" alt="展示">
+                </div>
+                <div class="menuon">
+                  <img src="img/top_ws.png" alt="ワークショップ">
+                </div>
+                <div class="menuoff">
+                  <img src="img/top_ws.png" alt="ワークショップ">
+                </div>
+                <div class="menuon">
+                  <img src="img/top_lec.png" alt="講演会">
+                </div>
+                <div class="menuoff">
+                  <img src="img/top_lec.png" alt="講演会">
+                </div>
+              </div>
+              <div class="imagearea">
+                <img src="img/exhi_image.png" alt="展示概要"> 
+                <img src="img/ws_image.png" alt="ワークショップ概要">
+                <img src="img/lec_image.png" alt="講演概要">
+              </div>
+            </div>
+          </div>
+          <div class="disc">
+            <h2>EEIC五月祭企画とは</h2>
+            <p>EEICとは、Electrical and Electronic Engineering, Information Communication Engineeringの頭文字をとったもので、東京大学工学部電気電子・電子情報工学科の2学科の総称です。五月祭では、”近未来体験”をテーマとし、研究成果や学生制作物の展示に加え、プログラミング教室や電子工作教室などのワークショップ、講演会など幅広い企画を用意します。小さいお子さんから大人の方まで楽しめる内容となっていますので、自分の未来、技術の未来、社会の未来、それぞれの未来を見にいらしてください。</p>
+            <p><a href="http://www.ee.t.u-tokyo.ac.jp/j/" target="_blank">→東京大学工学部電子情報工学科・電気電子工学部公式サイト</a></p>
+          </div>
+        </div>
+        <!--main-->
+        <div id="sidebar">
+          <div class="videoarea">
+            <div><img src="img/pv.png" alt="学科プロモーションビデオ"><iframe width="240" height="150" src="http://www.youtube.com/embed/W8JT9LAzNfU?rel=0" frameborder="0"></iframe></div>
+          </div>
+          <div class="fb">
+            <iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fmayfestival.jp%3Ffref%3Dts&amp;width=240&amp;height=558&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=true&amp;show_border=false&amp;appId=1440134802889926" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:240px; height:450px;" allowTransparency="true"></iframe>
+          </div>
+          <div class="twtr">
+            <a class="twitter-timeline" width="220" height="450" href="https://twitter.com/eeic2013" data-widget-id="447281393593118720" data-chrome="transparent" data-link-color="#666666">@eeic2013 からのツイート</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+        </div>
+        <div id="footer">
+        </div>
+      </div>
+      <!--CONTENTS-->
+    </div>
+    <!--CONTAINER-->
+  </body>
+</html>

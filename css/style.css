@@ -1,0 +1,277 @@
+@charset 'utf-8';
+
+#container{
+  width:100%;
+  height:auto;
+}
+#contents{
+  width:960px;
+  height:auto;
+  margin:0 auto;
+  padding:;
+  background:;
+  box-shadow:0px 0px 10px 3px #666666;
+  zoom:1;
+}
+/*
+#contents:after{
+  content:"";
+  display:block;
+  clear:both;
+  height:1px;
+  line-height:0;
+  overflow:hidden;
+  visibility:hidden;
+}
+*/
+#contents h2{
+  width:690px;
+  height:24px;
+  font-size:17px;
+  font-weight:normal;
+  text-indent:30px;
+  vertical-align:-10%;
+  margin:20px 0 20px 10px;
+  background:#CCCCCC url(../img/h2.png) no-repeat left;
+}
+#contents a{
+  color:#666666;
+}
+#contents .disc{
+  clear:both;
+  width:100%;
+  margin:20px 0px;
+  height:auto;
+}
+#contents .disc p{
+  font-size:small;
+  padding:0 0 0 30px;
+}
+/*Header*/
+header {
+  position:fixed;
+  z-index:3;
+  width:960px;
+  height:128px;
+  margin: 0 auto;
+  background-color:rgba(255,255,255,0.8);
+  zoom:1;
+}
+header .logo_area{
+  height:52px;
+  margin:0;
+}
+header .logo_eeic{
+  margin:15px 96px 2px;
+  height:35px;
+  float:left;
+}
+header .logo_title{
+  margin: 24px 22px 2px;
+  height:26px;
+  float:right;
+}
+header .sns{
+}
+
+/*navi*/
+nav{
+  clear:both;
+  height:50px;
+  margin:0;
+  border-top:3px solid #3399cc;
+  border-bottom:3px solid #3399cc;
+  background-color:#666666;
+}
+nav ul,
+nav ul li,
+nav ul li a{
+  margin:0;
+  padding:0;
+}
+nav ul li{
+  width:141px;
+  height:46px;
+  display:block;
+  float:left;
+  overflow:hidden;
+  margin:0;
+}
+nav ul li:before{
+  content:url("../img/nav_reg.png");
+}
+nav ul{
+  float:left;
+  margin:2px 2px 20px 20px;
+}
+nav a{
+  display:block;
+  float:right;
+  width:100px;
+  height:50px;
+  /*
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+*/
+}
+/*
+nav a:hover{
+  visibility:hidden;
+}*/
+nav li.home{
+  width:74px;
+  height:92px;
+  margin:-43px 3px 0 1px;
+  background-image:url(../img/ample_on.png);
+  background-position:left;
+}
+nav li.home:before{
+  display:none;
+}
+nav li.home a{
+  width:73px;
+  height:92px;
+  float:left;
+}
+nav li.exhi{
+  background-image:url(../img/exhi_on.png);
+  background-position:right;
+}
+nav li.ws{
+  background-image:url(../img/ws_on.png);
+  background-position:right;
+}
+nav li.lec{
+  background-image:url(../img/lec_on.png);
+  background-position:right;
+}
+nav li.shingaku{
+  background-image:url(../img/shingaku_on.png);
+  background-position:right;
+}
+nav li.access{
+  background-image:url(../img/access_on.png);
+  background-position:right;
+}
+.clearfix{
+  *zoom:1;
+}
+.clearfix:before,
+.clearfix:after{
+  display:table;
+  content:"";
+  line-height:0;
+}
+.clearfix:before{
+  clear:both;
+}
+#main{
+  float:left;
+  margin:128px 10px 20px 0;
+  width:700px;
+  height:auto;
+}
+/*top*/
+#top{
+  width:700px;
+  height:320px;
+}
+#top .topimage{
+  width:700px;
+  height:320px;
+}
+#top .topmenuarea{
+  padding-left:10px;
+  float:left;
+  width:145px;
+  height:320px;
+}
+#top .mayfes{
+  width:125px;
+  height:auto;
+  margin:0;
+  border-top:24px solid #CCCCCC;
+  border-left:10px solid #3399CC;
+}
+#top .mayfes p{
+  margin:4px 2px 4px;
+  line-height:1.5;
+}
+#top .mayfes p.date{
+  line-height:1.3;
+}
+#top .mayfes p.small{
+  font-size:small;
+  line-height:1.3;
+}
+#top .menuoff{
+  width:135px;
+  height:24px;
+  background:url(../img/menu_off.png);
+  margin:10px 0 0;
+  text-align:center;
+}
+#top .menuoff img{
+  position:relative;
+  top:2px;
+}
+#top .menuon{
+  width:167px;
+  height:34px;
+  margin:10px 0 0;
+  text-align:center;
+  background-image:url(../img/menu_on.png);
+}
+#top .menuon img{
+  position:relative;
+  top:6px;
+}
+#top .imagearea{
+  float:right;
+  width:535px;
+  height:310px;
+  border:5px solid #666666;
+}
+
+/*sidebar*/
+#sidebar{
+  float:right;
+  margin:128px 10px 0 0;
+  width:240px;
+  height:auto;
+}
+#sidebar .videoarea{
+  width:240px;
+  height:174px;
+  text-align:center;
+  background-color:#CCCCCC;
+}
+#sidebar .videoarea img{
+  position:relative;
+  top:2px;
+}
+#sidebar .fb, .twtr{
+  width:240px;
+  height:460px;
+  margin:20px 0;
+  font-size:small;
+  text-align:center;
+  background-color:#CCCCCC;
+}
+
+/*exhibition*/
+#exhi{
+  width:700px;
+  height:500px;
+}
+
+/*footer*/
+#footer{
+  clear:both;
+  width:960px;
+  height:50px;
+  border-top:3px solid #3399cc;
+  background-color:#666666;
+}
+
