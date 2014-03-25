@@ -24,7 +24,7 @@
   visibility:hidden;
 }
 */
-#contents h2{
+h2{
   width:690px;
   height:24px;
   font-size:17px;
@@ -34,18 +34,44 @@
   margin:20px 0 20px 10px;
   background:#CCCCCC url(../img/h2.png) no-repeat left;
 }
-#contents a{
+h3{
+  font-size:14px;
+  margin:10px 0 10px 20px;
+  font-weight:bold;
+}
+a{
   color:#666666;
 }
-#contents .disc{
+.disc{
   clear:both;
-  width:100%;
   margin:20px 0px;
   height:auto;
 }
-#contents .disc p{
-  font-size:small;
+.disc p,dt,dd{
+  display:block;
+  font-size:13px;
   padding:0 0 0 30px;
+}
+.disc dd{
+  margin-left:30px;
+  padding-left:10px;
+}
+.disc dt{
+  margin-top:10px;
+}
+.image{
+  width:650px;
+  height:400px;
+  border:5px solid #666666;
+}
+.info{
+  font-size:14px;
+  font-weight:bold;
+  margin-bottom:5px;
+  margin:0 20px;
+}
+iframe{
+  border:none;
 }
 /*Header*/
 header {
@@ -217,6 +243,7 @@ nav li.access{
   top:2px;
 }
 #top .menuon{
+  display:none;
   width:167px;
   height:34px;
   margin:10px 0 0;
@@ -265,7 +292,39 @@ nav li.access{
   width:700px;
   height:500px;
 }
-
+/*lecture*/
+.lecture{
+  width:690px;
+  margin-left:10px;
+  margin-top:10px;
+}
+.lecturer{
+  display:block;
+  float:left;
+  width:220px;
+  margin:0 0 0 10px;
+}
+.lecturer .time{
+  font-size:14px;
+  font-color:#3399cc;
+}
+.lecturer .name{
+  font-size:17px;
+  margin-left:10px;
+}
+.lecturer .occupation{
+  font-size:12px;
+  height:54px;
+}
+.lecturer .disc{
+  font-size:13px;
+  margin:10px 0 0;
+}
+.lecturer img{
+  width:210px;
+  height:143px;
+  margin:10px 10px 10px 0;
+}
 /*footer*/
 #footer{
   clear:both;
