@@ -12,13 +12,6 @@ $(function(){
       $("img",this).show();
     }
   });
-  /*
-  $("nav a").click(function(){
-    $("nav a img").show();
-    $("img",this).hide();
-    $("nav a img").removeClass("clicked");
-    $("img",this).addClass("clicked");
-  });*/
 })
 
 $(function(){
@@ -35,3 +28,29 @@ $(function(){
   },3000);
 });
 
+$(function(){
+  $(".wsdetail").css("display","none");
+  $("div.workshop").click(function(){
+    if($(this).next("div.wsdetail").css("display")=="none"){
+      $(this).next("div.wsdetail").slideDown();
+    }
+    else{
+      $(this).next("div.wsdetail").hide();
+    }
+  });
+});
+
+$(function(){
+  $("div.demodisc").hide();
+  $("div.demo").each(function(){
+    var file="img/"+$(this).attr("class").replace("demo ","")+".jpg";
+    $(this).css("background-image","url("+file+")");
+  });
+  $("div.demo").hover(function(){
+    $("<img src=\"img/bg-black.png\">").prependTo(this);
+    $("div.demodisc",this).show();
+  }, function(){
+    $(".demo img").remove();
+    $("div.demodisc",this).hide();
+  });
+})

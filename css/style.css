@@ -40,17 +40,16 @@ h3{
   font-weight:bold;
 }
 a{
-  color:#666666;
+}
+p,dt,dd{
+  display:block;
+  font-size:13px;
+  padding:0 0 0 30px;
 }
 .disc{
   clear:both;
   margin:20px 0px;
   height:auto;
-}
-.disc p,dt,dd{
-  display:block;
-  font-size:13px;
-  padding:0 0 0 30px;
 }
 .disc dd{
   margin-left:30px;
@@ -76,7 +75,7 @@ iframe{
 /*Header*/
 header {
   position:fixed;
-  z-index:3;
+  z-index:3000;
   width:960px;
   height:128px;
   margin: 0 auto;
@@ -116,7 +115,7 @@ nav ul li a{
   padding:0;
 }
 nav ul li{
-  width:141px;
+  width:169px;
   height:46px;
   display:block;
   float:left;
@@ -161,23 +160,23 @@ nav li.home a{
   float:left;
 }
 nav li.exhi{
-  background-image:url(../img/exhi_on.png);
+  background:url(../img/exhi_on.png) no-repeat;
   background-position:right;
 }
 nav li.ws{
-  background-image:url(../img/ws_on.png);
+  background:url(../img/ws_on.png) no-repeat;
   background-position:right;
 }
 nav li.lec{
-  background-image:url(../img/lec_on.png);
+  background:url(../img/lec_on.png) no-repeat;
   background-position:right;
 }
 nav li.shingaku{
-  background-image:url(../img/shingaku_on.png);
+  background:url(../img/shingaku_on.png) no-repeat;
   background-position:right;
 }
 nav li.access{
-  background-image:url(../img/access_on.png);
+  background:url(../img/access_on.png) no-repeat;
   background-position:right;
 }
 .clearfix{
@@ -223,6 +222,7 @@ nav li.access{
 #top .mayfes p{
   margin:4px 2px 4px;
   line-height:1.5;
+  padding:0;
 }
 #top .mayfes p.date{
   line-height:1.3;
@@ -249,6 +249,7 @@ nav li.access{
   margin:10px 0 0;
   text-align:center;
   background-image:url(../img/menu_on.png);
+  z-index:100;
 }
 #top .menuon img{
   position:relative;
@@ -259,6 +260,7 @@ nav li.access{
   width:535px;
   height:310px;
   border:5px solid #666666;
+  z-index:10;
 }
 
 /*sidebar*/
@@ -325,6 +327,127 @@ nav li.access{
   height:143px;
   margin:10px 10px 10px 0;
 }
+/*workshop*/
+.workshop{
+  clear:both;
+  width:660px;
+  margin:10px 10px 10px 30px;
+  cursor:pointer;
+}
+.workshop img{
+  width:660px;
+}
+.wsdetail{
+  width:680px;
+  height:auto;
+  margin-left:20px;
+}
+.wsdetail dl{
+  margin:20px 0;
+}
+.wsdetail dt,.wsdetail dd{
+  display:block;
+  float:left;
+  font-weight:bold;
+  font-size:14px;
+}
+.wsdetail dt{
+  clear:both;
+  padding:0 10px 0 30px;
+}
+.wsdetail dd{
+  margin:0;
+  padding:0;
+}
+.wsdetail p{
+  display:block;
+  width:440px;
+  float:left;
+  margin:0 0 20px;
+}
+.wsdetail .title{
+  clear:both;
+  font-size:15px;
+  width:680px;
+  margin:0 0 10px;
+  background:url("../img/border.png") repeat-x center;
+  /*border-bottom:5px solid #3399cc;*/
+}
+.wsdetail .title span{
+  background-color:white;
+  display: inline-block;
+  padding: 0 10px 0;
+  position: relative;
+  left: 10px;
+}
+.wsdetail img{
+  display:block;
+  float:left;
+  width:200px;
+  height:150px;
+  margin-bottom:20px;
+}
+.wsdisc{
+  width:640px;
+  padding-left:30px;
+}
+.wsdisc p{
+  display:block;
+  width:640px;
+  padding:0;
+  margin-top:20px;
+}
+.wsdisc img{
+  float:left;
+  margin-right:10px;
+  width:300px;
+  height:225px;
+}
+/*exhibition*/
+.exhibition{
+  width:660px;
+  margin-left:30px;
+}
+.demo{
+  cursor:pointer;
+  width:155px;
+  height:155px;
+  display:block;
+  float:left;
+  margin: 10px 10px 0 0;
+  background-color:gray;
+  position:relative;
+}
+.demo img{
+  position:relative;
+  top:-25px;
+  left:-25px;
+  z-index:500;
+}
+.demotitle{
+  width:155px;
+  background-color:white;
+  opacity:0.6;
+  position:absolute;
+  top:10px;
+  border-top:2px solid gray;
+  border-bottom:2px solid gray;
+  text-align:center;
+  line-height:1.4em;
+  font-size:13px;
+}
+.demodisc{
+  font-size:12px;
+  line-height:1.4em;
+  color:white;
+  position:absolute;
+  top:-20px;
+  left:-20px;
+  right:-20px;
+  bottom:-20px;
+  overflow:visible;
+  z-index:1000;
+}
 /*footer*/
 #footer{
   clear:both;
@@ -333,4 +456,3 @@ nav li.access{
   border-top:3px solid #3399cc;
   background-color:#666666;
 }
-
