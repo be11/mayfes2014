@@ -2,36 +2,69 @@
 
 #container{
   width:100%;
-  height:auto;
+  height:100%;
+  background:url(../img/hougan.png) repeat fixed;
 }
 #contents{
   width:960px;
-  height:auto;
   margin:0 auto;
-  padding:;
-  background:;
+  position:relative;
+  background:white;
   box-shadow:0px 0px 10px 3px #666666;
   zoom:1;
 }
-/*
-#contents:after{
-  content:"";
-  display:block;
-  clear:both;
-  height:1px;
-  line-height:0;
-  overflow:hidden;
-  visibility:hidden;
+#exhibition-container{
+  width:100%
+  height:auto;
+  background:url(../img/hougan.png) repeat fixed;
+  background-image:url(../img/exhibition_rev.png),url(../img/exhibition.png),url(../img/hougan.png);
+  background-repeat:no-repeat,no-repeat,repeat;
+  background-position:left top,right bottom;
+  background-attachment:fixed;
 }
-*/
+#workshop-container{
+  width:100%;
+  height:auto;
+  background:url(../img/hougan.png) repeat fixed;
+  background-image:url(../img/handagote_rev.png),url(../img/handagote2.png),url(../img/hougan.png);
+  background-repeat:no-repeat,no-repeat,repeat;
+  background-position:left top,right bottom;
+  background-attachment:fixed;
+}
+#lecture-container{
+  width:100%
+  height:auto;
+  background:url(../img/hougan.png) repeat fixed;
+  background-image:url(../img/network.png),url(../img/network_rev.png),url(../img/hougan.png);
+  background-repeat:no-repeat,no-repeat,repeat;
+  background-position:left top,right bottom;
+  background-attachment:fixed;
+}
+#shingakusoudan-container{
+  width:100%;
+  height:auto;
+  background:url(../img/hougan.png) repeat fixed;
+  background-image:url(../img/girl_rev.png),url(../img/girl.png),url(../img/hougan.png);
+  background-repeat:no-repeat,no-repeat,repeat;
+  background-position:left top,right bottom;
+  background-attachment:fixed;
+}
+#access-container{
+  width:100%;
+  height:auto;
+  background:url(../img/hougan.png) repeat fixed;
+  background-image:url(../img/houi3.png),url(../img/houi2.png),url(../img/hougan.png);
+  background-repeat:no-repeat,no-repeat,repeat;
+  background-position:/*-90px -100px,*/left top,right bottom;
+  background-attachment:fixed;
+}
 h2{
-  width:690px;
   height:24px;
   font-size:17px;
   font-weight:normal;
   text-indent:30px;
   vertical-align:-10%;
-  margin:20px 0 20px 10px;
+  margin:20px 0 20px;
   background:#CCCCCC url(../img/h2.png) no-repeat left;
 }
 h3{
@@ -39,12 +72,16 @@ h3{
   margin:10px 0 10px 20px;
   font-weight:bold;
 }
-a{
+a:link{
+  color:#666666;
+}
+a:visited{
+  color:#666666;
 }
 p,dt,dd{
   display:block;
   font-size:13px;
-  padding:0 0 0 30px;
+  padding:0 0 0 10px;
 }
 .disc{
   clear:both;
@@ -191,11 +228,29 @@ nav li.access{
 .clearfix:before{
   clear:both;
 }
-#main{
+
+#main-top{
   float:left;
-  margin:128px 10px 20px 0;
+  margin:0 auto;
+  padding-top:128px;
   width:700px;
-  height:auto;
+  height:100%;
+}
+#main-top h2{
+  margin:20px 0 20px 10px;
+}
+#main-top p{
+  padding-left:30px;
+}
+#main-top p{
+  padding-left:30px;
+}
+#main{
+  /*float:left;*/
+  margin:0 auto;
+  padding-top:128px;
+  width:700px;
+  height:100%;
 }
 /*top*/
 #top{
@@ -248,7 +303,7 @@ nav li.access{
   height:34px;
   margin:10px 0 0;
   text-align:center;
-  background-image:url(../img/menu_on.png);
+  background:url(../img/menu_on.png) no-repeat;
   z-index:100;
 }
 #top .menuon img{
@@ -297,14 +352,14 @@ nav li.access{
 /*lecture*/
 .lecture{
   width:690px;
-  margin-left:10px;
+  margin-left:5px;
   margin-top:10px;
 }
 .lecturer{
   display:block;
   float:left;
   width:220px;
-  margin:0 0 0 10px;
+  margin:0 0 20px 10px;
 }
 .lecturer .time{
   font-size:14px;
@@ -315,6 +370,7 @@ nav li.access{
   margin-left:10px;
 }
 .lecturer .occupation{
+  padding-left:10px;
   font-size:12px;
   height:54px;
 }
@@ -331,7 +387,7 @@ nav li.access{
 .workshop{
   clear:both;
   width:660px;
-  margin:10px 10px 10px 30px;
+  margin:10px 20px 10px 20px;
   cursor:pointer;
 }
 .workshop img{
@@ -358,6 +414,7 @@ nav li.access{
 .wsdetail dd{
   margin:0;
   padding:0;
+  width:570px;
 }
 .wsdetail p{
   display:block;
@@ -375,6 +432,13 @@ nav li.access{
 }
 .wsdetail .title span{
   background-color:white;
+  display: inline-block;
+  padding: 0 10px 0;
+  border-left:10px solid white;
+}
+.wsdetail .title span.level{
+  background-color:#3399cc;
+  color:white;
   display: inline-block;
   padding: 0 10px 0;
   position: relative;
@@ -406,6 +470,7 @@ nav li.access{
 /*exhibition*/
 .exhibition{
   width:660px;
+  height:515px;
   margin-left:30px;
 }
 .demo{
@@ -448,11 +513,16 @@ nav li.access{
   overflow:visible;
   z-index:1000;
 }
+#shingakusoudan{
+  height:600px
+}
 /*footer*/
 #footer{
+  text-indent:500px;
   clear:both;
   width:960px;
   height:50px;
   border-top:3px solid #3399cc;
   background-color:#666666;
 }
+

@@ -1,3 +1,4 @@
+/*global nav*/
 $(function(){
   $("nav a").each(function(){
     if($(this).hasClass("currentPage")){
@@ -13,7 +14,7 @@ $(function(){
     }
   });
 })
-
+/*トップの画像スライドショー*/
 $(function(){
   $(".menuon:gt(0)").add($(".menuoff:first")).add($(".imagearea img:gt(0)")).hide();
   $(".menuon:first").show();
@@ -27,7 +28,7 @@ $(function(){
     });
   },3000);
 });
-
+/*ワークショップ*/
 $(function(){
   $(".wsdetail").css("display","none");
   $("div.workshop").click(function(){
@@ -39,7 +40,7 @@ $(function(){
     }
   });
 });
-
+/*展示の写真自動取得*/
 $(function(){
   $("div.demodisc").hide();
   $("div.demo").each(function(){
@@ -54,3 +55,10 @@ $(function(){
     $("div.demodisc",this).hide();
   });
 })
+
+$(function(){
+  var size=$(window).height();
+  $("div.shingakusoudan").css("height",size-320);
+})
+
+
