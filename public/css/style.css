@@ -61,7 +61,7 @@
 h2{
   height:24px;
   font-size:17px;
-  font-weight:normal;
+  font-weight:bold;
   text-indent:30px;
   vertical-align:-10%;
   margin:20px 0 20px;
@@ -286,19 +286,17 @@ nav li.access{
   font-size:small;
   line-height:1.3;
 }
-#top .menuoff{
-  width:135px;
-  height:24px;
-  background:url(../img/menu_off.png);
-  margin:10px 0 0;
-  text-align:center;
-}
-#top .menuoff img{
-  position:relative;
-  top:2px;
+.menuon a,.menuoff a{
+  display:block;
+  position:absolute;
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
 }
 #top .menuon{
   display:none;
+  position:relative;
   width:167px;
   height:34px;
   margin:10px 0 0;
@@ -306,9 +304,25 @@ nav li.access{
   background:url(../img/menu_on.png) no-repeat;
   z-index:100;
 }
-#top .menuon img{
+#top .menuoff{
   position:relative;
-  top:6px;
+  width:135px;
+  height:24px;
+  background:url(../img/menu_off.png);
+  margin:10px 0 0;
+  text-align:center;
+}
+.menuoff img{
+  display:block;
+  position:absolute;
+  left:25px;
+  top:5px;
+}
+.menuon img{
+  display:block;
+  position:absolute;
+  top:10px;
+  left:25px;
 }
 #top .imagearea{
   float:right;

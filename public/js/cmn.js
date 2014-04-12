@@ -61,6 +61,11 @@ $(function(){
   $("div.shingakusoudan").css("height",size-320);
 })
 
-$(window).on("scroll", function(){
+$(window).resize(function(){
+  var size=$(window).width();
+  if(size<960){
+    $(window).on("scroll", function(){
       $("header").css("left", -$(window).scrollLeft());
-});
+    });}
+})
+
