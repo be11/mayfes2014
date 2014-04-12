@@ -26,7 +26,7 @@ $(function(){
     $("div.menuon").eq(first).add($("div.menuoff").eq(second)).add($(".imagearea img").eq(first)).fadeOut(400,function(){
       $("div.menuoff").eq(first).add($("div.menuon").eq(second)).add($(".imagearea img").eq(second)).fadeIn(400)
     });
-  },3000);
+  },4500);
 });
 /*ワークショップ*/
 $(function(){
@@ -61,4 +61,6 @@ $(function(){
   $("div.shingakusoudan").css("height",size-320);
 })
 
-
+$(window).on("scroll", function(){
+      $("header").css("left", -$(window).scrollLeft());
+});

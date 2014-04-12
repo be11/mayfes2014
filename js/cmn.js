@@ -23,8 +23,8 @@ $(function(){
   setInterval(function(){
     if(++first> 2){first=0;} 
     if(++second > 2){second=0;}
-    $("div.menuon").eq(first).add($("div.menuoff").eq(second)).add($(".imagearea img").eq(first)).fadeOut(400,function(){
-      $("div.menuoff").eq(first).add($("div.menuon").eq(second)).add($(".imagearea img").eq(second)).fadeIn(400)
+    $("div.menuon").eq(first).add($("div.menuoff").eq(second)).add($(".imagearea img").eq(first)).fadeOut(700,function(){
+      $("div.menuoff").eq(first).add($("div.menuon").eq(second)).add($(".imagearea img").eq(second)).fadeIn(700)
     });
   },3000);
 });
