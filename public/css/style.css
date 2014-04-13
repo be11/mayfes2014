@@ -63,7 +63,6 @@ h2{
   font-size:17px;
   font-weight:bold;
   text-indent:30px;
-  vertical-align:-10%;
   margin:20px 0 20px;
   background:#CCCCCC url(../img/h2.png) no-repeat left;
 }
@@ -86,6 +85,7 @@ p,dt,dd{
 .disc{
   clear:both;
   margin:20px 0px;
+  line-height:1.4em;
   height:auto;
 }
 .disc dd{
@@ -94,6 +94,16 @@ p,dt,dd{
 }
 .disc dt{
   margin-top:10px;
+}
+.disc ul{
+  display:block;
+  width:700px;
+  padding-left:30px;
+}
+.disc li{
+  display:inline-block;
+  font-size:13px;
+  width:225px;
 }
 .image{
   width:650px;
