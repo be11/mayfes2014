@@ -69,3 +69,10 @@ $(window).resize(function(){
     });}
 })
 
+$(window).resize(function(){
+  var size=$(window).width();
+  if(size<960){
+      $("header").css("position", "relative");
+  }
+})
+
