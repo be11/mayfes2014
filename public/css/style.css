@@ -59,7 +59,8 @@
   background-attachment:fixed;
 }
 h2{
-  height:24px;
+  height:25px;
+  line-height:25px;
   font-size:17px;
   font-weight:bold;
   text-indent:30px;
