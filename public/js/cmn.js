@@ -76,3 +76,34 @@ $(window).resize(function(){
   }
 })
 
+// スマートフォン対応
+
+$(function() {
+    var userAgent = navigator.userAgent;
+    var isAndroid = userAgent.indexOf('Android') > 0;
+    var isSp = userAgent.indexOf('iPhone') > 0 || userAgent.indexOf('iPod') > 0 || (isAndroid && userAgent.indexOf('Mobile') > 0);
+    var isMobile = isSp || isAndroid || userAgent.indexOf('iPad') > 0;
+
+    var myUrl = window.location.href;
+    var myFile = myUrl.substring(myUrl.lastIndexOf('/')+1, myUrl.length);
+    var spLink = 'sp/' + myFile;
+
+    if (isSp) {
+        if (myFile == '') {
+            // トップの時だけリダイレクト
+            window.location.href = spLink;
+            return;
+        }
+
+        // (スマートフォンでのみ)スマートフォン向けへの誘導
+        $("header").after('<div class="redirect-message"><strong><a href="'+spLink+'">スマートフォン向けサイトはこちら</a></strong></div>');
+    }
+
+    if (isMobile) {
+        // モバイル端末ではヘッダを固定しない
+        $('header').css('position', 'static');
+        $('#main').css('padding-top', '0px');
+        $('#main-top').css('padding-top', '0px');
+    }
+});
+
