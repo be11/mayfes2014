@@ -21,5 +21,12 @@ $(function() {
     
     // 下にPC向けへの誘導
     $("#footer").before('<p><a href="'+pcLink+'">PC向けサイトはこちら</a></strong>');
+
+    if (isAndroid) {
+        $(".openmap").each(function(){
+           url = $(this).attr("href").replace("maps:", "http://maps.google.com?");
+           $(this).attr("href", url);
+        });
+    }
 });
 
