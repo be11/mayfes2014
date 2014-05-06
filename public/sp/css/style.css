@@ -426,13 +426,6 @@ img.banner {
   margin-right: auto;
   display:block;
 }
-img.workshop-banner {
-  width: 480px;
-  max-width: none !important;
-  margin-left: auto;
-  margin-right: auto;
-  display:block;
-}
 
 .inline-map{
   position: relative;
