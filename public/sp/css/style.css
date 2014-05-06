@@ -1,0 +1,486 @@
+@charset 'utf-8';
+
+#container{
+  width:100%;
+  /*height:100%;*/
+  height: auto;
+  background:url(../../img/hougan.png) repeat fixed;
+}
+#contents{
+  margin:0 auto;
+  position:relative;
+  background:white;
+  box-shadow:0px 0px 10px 3px #666666;
+  zoom:1;
+}
+#exhibition-container{
+  width:100%
+  height:auto;
+  background:url(../../img/hougan.png) repeat fixed;
+  background-image:url(../../img/exhibition_rev.png),url(../../img/exhibition.png),url(../../img/hougan.png);
+  background-repeat:no-repeat,no-repeat,repeat;
+  background-position:left top,right bottom;
+  background-attachment:fixed;
+}
+#workshop-container{
+  width:100%;
+  height:auto;
+  background:url(../../img/hougan.png) repeat fixed;
+  background-image:url(../../img/handagote_rev.png),url(../../img/handagote2.png),url(../../img/hougan.png);
+  background-repeat:no-repeat,no-repeat,repeat;
+  background-position:left top,right bottom;
+  background-attachment:fixed;
+}
+#lecture-container{
+  width:100%
+  height:auto;
+  background:url(../../img/hougan.png) repeat fixed;
+  background-image:url(../../img/network.png),url(../../img/network_rev.png),url(../../img/hougan.png);
+  background-repeat:no-repeat,no-repeat,repeat;
+  background-position:left top,right bottom;
+  background-attachment:fixed;
+}
+#shingakusoudan-container{
+  width:100%;
+  height:auto;
+  background:url(../../img/hougan.png) repeat fixed;
+  background-image:url(../../img/girl_rev.png),url(../../img/girl.png),url(../../img/hougan.png);
+  background-repeat:no-repeat,no-repeat,repeat;
+  background-position:left top,right bottom;
+  background-attachment:fixed;
+}
+#access-container{
+  width:100%;
+  height:auto;
+  background:url(../../img/hougan.png) repeat fixed;
+  background-image:url(../../img/houi3.png),url(../../img/houi2.png),url(../../img/hougan.png);
+  background-repeat:no-repeat,no-repeat,repeat;
+  background-position:/*-90px -100px,*/left top,right bottom;
+  background-attachment:fixed;
+}
+
+h2 {
+  height: 24px;
+  line-height: 25px;
+  font-size:17px;
+  font-weight:bold;
+  text-indent:30px;
+  margin-left: 5px;
+  background:#CCCCCC url(../../img/h2.png) no-repeat left;
+}
+h3{
+  /*font-size:14px;*/
+  margin:10px 0 10px 20px;
+  font-weight:bold;
+}
+
+a:link{
+  color:#666666;
+}
+a:visited{
+  color:#666666;
+}
+p {
+  display:block;
+  /*font-size:13px;*/
+  margin: 0.2em 20px;
+  line-height:1.4em;
+}
+.disc{
+  clear:both;
+  margin:20px 0px;
+  height:auto;
+}
+
+.image{
+  height:400px;
+  border:5px solid #666666;
+}
+.info{
+  /*font-size:14px;*/
+  font-weight:bold;
+  margin-bottom:5px;
+  margin:0 20px;
+}
+iframe{
+  border:none;
+}
+/*Header*/
+header {
+  z-index:3000;
+  margin: 0 auto;
+  background-color:rgba(255,255,255,0.8);
+  zoom:1;
+}
+header .logo_area{
+  padding-top: 10px;
+  padding-left: 98px;
+  margin:0;
+  vertical-align: bottom;
+  line-height: 26px;
+}
+header .logo_eeic{
+  text-align: center;
+  height:35px;
+  float:left;
+}
+header .logo_title{
+  float:left;;
+}
+header .sns{
+}
+
+/*navi*/
+nav{
+  clear:both;
+  margin:0;
+  border-top:3px solid #3399cc;
+  border-bottom:3px solid #3399cc;
+  background-color:#666666;
+}
+nav ul,
+nav ul li,
+nav ul li a{
+  margin:0;
+  padding:0;
+}
+nav ul li{
+  display:block;
+  float:left;
+  overflow:hidden;
+  margin:0;
+}
+nav ul{
+  float:left;
+  margin: 2px 2px 2px 10px;
+}
+nav a{
+  display:block;
+  float:right;
+  width:100px;
+  height:50px;
+}
+
+nav li.home{
+  width:74px;
+  height:92px;
+  margin:-43px 3px 0 1px;
+  background-image:url(../../img/ample_on.png);
+  background-position:left;
+}
+nav li.home:before{
+  display:none;
+}
+nav li.home a{
+  width:73px;
+  height:92px;
+  float:left;
+}
+
+.clearfix{
+  *zoom:1;
+}
+.clearfix:before,
+.clearfix:after{
+  display:table;
+  content:"";
+  line-height:0;
+}
+.clearfix:before{
+  clear:both;
+}
+
+#main-top{
+  margin:0 auto;
+  height:100%;
+}
+#main{
+  margin:0 auto;
+  height:100%;
+}
+/*top*/
+#top {
+}
+#top .topimage{
+}
+#top .topmenuarea{
+}
+#top .mayfes{
+  margin: 5px 20px 5px 20px;
+  border-top:15px solid #CCCCCC;
+  border-left:10px solid #3399CC;
+}
+#top .mayfes p{
+  margin:4px 2px 4px;
+  line-height:1.5;
+  padding:0;
+}
+#top .mayfes p.date{
+  line-height:1.3;
+}
+#top .mayfes p.small{
+  /*font-size:small;*/
+  line-height:1.3;
+}
+
+.large_banner {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.large_banner .header {
+  position:relative;
+  width:135px;
+  height:24px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  background:url(../../img/menu_off.png);
+}
+.large_banner .header a{
+  display:block;
+  height:100%;
+  width:100%;
+}
+.large_banner .header img{
+  display:block;
+  position:absolute;
+  left:25px;
+  top:5px;
+}
+
+#top .imagearea{
+  border:5px solid #666666;
+  z-index:10;
+}
+
+/*sidebar*/
+#sidebar{
+  height:auto;
+}
+#sidebar .videoarea{
+  width:240px;
+  height:174px;
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:#CCCCCC;
+}
+#sidebar .videoarea img{
+  position:relative;
+  top:2px;
+}
+#sidebar .fb, .twtr{
+  width:240px;
+  height:460px;
+  margin:20px 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-size:small;
+  text-align:center;
+  background-color:#CCCCCC;
+}
+
+/*exhibition*/
+#exhi{
+}
+/*lecture*/
+.lecture{
+  /*margin-left:5px;*/
+  margin-top:10px;
+}
+.lecturer{
+  /*margin:0 0 20px 10px;*/
+  margin-bottom: 2em;
+}
+.lecturer .about {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.lecturer .about .time{
+  /*font-size:14px;*/
+  font-size: 130%;
+  font-color:#3399cc;
+}
+.lecturer .about .name{
+  /*font-size:17px;*/
+  font-size: 150%;
+  line-height: 150%;
+  margin-left:10px;
+}
+.lecturer .about .occupation{
+  padding-left:10px;
+  /*font-size:12px;*/
+}
+.lecturer .disc{
+  /*font-size:13px;*/
+  margin:10px 0 0;
+}
+.lecturer img{
+  margin:10px 10px 10px 0;
+}
+
+div.lecture-registration {
+  font-size: 150%;
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/*workshop*/
+.workshop{
+  margin-top: 40px;
+}
+.workshop img{
+}
+.wsdetail{
+  height:auto;
+}
+
+.wsdetail .title{
+  clear:both;
+  margin:15px 0 10px;
+  background:url("../../img/border.png") repeat-x center;
+}
+.wsdetail .title span{
+  background-color:white;
+  display: inline-block;
+  padding: 0 10px 0;
+  border-left:10px solid white;
+}
+.wsdetail .title span.level{
+  background-color:#3399cc;
+  color:white;
+  display: inline-block;
+  padding: 0 10px 0;
+  position: relative;
+  left: 10px;
+}
+.wsdetail img{
+  display:block;
+  margin-bottom:20px;
+}
+.wsdisc{
+  clear: both;
+}
+/*.wsdisc p{
+  display:block;
+  padding:0;
+  margin-top:20px;
+}*/
+.wsdisc img{
+  margin-right:10px;
+}
+/*exhibition*/
+.exhibition{
+}
+.demo{
+  margin-bottom: 2em;
+}
+.demo .demoicon {
+  width:155px;
+  height:155px;
+  display:block;
+  position:relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.demo .demoicon .demoimg {
+  position: absolute;
+}
+
+.demo .demoicon .demotitle {
+  width:155px;
+  background-color:white;
+  opacity:0.6;
+  position:absolute;
+  top:10px;
+  border-top:2px solid gray;
+  border-bottom:2px solid gray;
+  text-align:center;
+  line-height:1.4em;
+  z-index:1000;
+  /*font-size:13px;*/
+}
+.demodisc{
+  z-index:1000;
+}
+#shingakusoudan{
+  height:600px
+}
+/*footer*/
+#footer{
+  clear:both;
+  border-top:3px solid #3399cc;
+  background-color:#666666;
+  padding: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+img.banner {
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
+}
+img.workshop-banner {
+  width: 480px;
+  max-width: none !important;
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
+}
+
+.inline-map{
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 80%;
+}
+.inline-map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+ul.name-list {
+  display:block;
+  padding-left:30px;
+}
+ul.name-list li{
+  display:inline-block;
+  padding-right: 30px;
+}
+
+dl.text {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+dl.text dt{
+  font-weight:bold;
+  clear:left;
+  float:left;
+  line-height: 1.4em;
+  width: 5em;
+  text-align: center;
+}
+dl.text dd{
+  line-height: 1.4em;
+  margin-left: 5em;
+}
+
+div.redirect-message {
+  font-size: 200%;
+  text-align: center;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* vim:set ts=2 sw=2 sts=2: */
