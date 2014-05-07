@@ -408,6 +408,12 @@ nav li.access{
   height:143px;
   margin:10px 10px 10px 0;
 }
+
+div.lecture-registration {
+  font-size: 20px;
+  text-align: center;
+}
+
 /*workshop*/
 .workshop{
   clear:both;
@@ -550,4 +556,12 @@ nav li.access{
   border-top:3px solid #3399cc;
   background-color:#666666;
 }
+
+/* スマートフォン対応 */
+div.redirect-message {
+  width: 320px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 
