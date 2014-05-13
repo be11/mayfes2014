@@ -84,6 +84,10 @@ p,dt,dd{
   padding:0 0 0 10px;
   line-height:1.4em;
 }
+.red{
+  color:red;
+  font-weight:bold;
+}
 .disc{
   clear:both;
   margin:20px 0px;
@@ -105,6 +109,9 @@ p,dt,dd{
   display:inline-block;
   font-size:13px;
   width:225px;
+}
+.disc img{
+  margin-left:30px;
 }
 .image{
   width:650px;
@@ -501,7 +508,7 @@ div.lecture-registration {
 /*exhibition*/
 .exhibition{
   width:660px;
-  height:515px;
+  height:670px;
   margin-left:30px;
 }
 .demo{
