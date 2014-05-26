@@ -14,7 +14,7 @@ $(function(){
     }
   });
 })
-/*トップの画像スライドショー*/
+/*トップの画像スライドショー
 $(function(){
   $(".menuon:gt(0)").add($(".menuoff:first")).add($(".imagearea img:gt(0)")).hide();
   $(".menuon:first").show();
@@ -28,6 +28,7 @@ $(function(){
     });
   },4500);
 });
+ */
 /*ワークショップ*/
 $(function(){
   $(".wsdetail").css("display","none");
